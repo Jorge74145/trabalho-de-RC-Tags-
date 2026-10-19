@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechLumina Store - Gadgets e Tecnologia Futurista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>TechLumina Store</h1>
+        <p>A sua loja de tecnologia e inovação para o futuro</p>
+        <button id="btn-theme" class="btn-interativo">Modo Escuro</button>
+    </header>
+
+    <!-- Menu de Navegação Horizontal -->
+    <nav>
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#encomenda">Encomenda</a></li>
+        </ul>
+    </nav>
+
+    <!-- Mensagem de fallback para JS desativado -->
+    <noscript>
+        <div class="info-banner" style="background-color: #a11d1d;">
+            O seu navegador não suporta ou tem o JavaScript desativado. Algumas funcionalidades interativas podem não funcionar.
+        </div>
+    </noscript>
+
+    <main>
+        <!-- Banner de Boas-vindas / Contador -->
+        <div id="visit-counter" class="info-banner"></div>
+
+        <!-- Banner Gráfico com Canvas (Sem Cupão) -->
+        <section class="apresentacao card">
+            <h2>Lançamento Exclusivo TechLumina</h2>
+            <p>Descubra a nova geração de gadgets e dispositivos inteligentes com portes grátis para todo o país.</p>
+            <canvas id="bannerCanvas" width="600" height="80"></canvas>
+        </section>
+
+        <hr>
+
+        <!-- Secção de Produtos em Destaque -->
+        <section id="produtos" class="produtos-seccao">
+            <h2>Produtos em Destaque</h2>
+            
+            <div class="cards-grid">
+                <!-- Artigo do Produto 1 (Com novo Vídeo) -->
+                <article class="card">
+                    <h3>Auscultadores LuminaSound Pro</h3>
+                    <h4>Cancelamento Ativo de Ruído & Som Hi-Fi</h4>
+                    
+                    <figure>
+                        <video controls width="100%" poster="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800">
+                            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+                            O seu navegador não suporta o elemento de vídeo.
+                        </video>
+                        <figcaption>Vídeo de apresentação oficial dos auscultadores em alta definição.</figcaption>
+                    </figure>
+
+                    <h5>Especificações Técnicas:</h5>
+                    <dl>
+                        <dt>Autonomia:</dt>
+                        <dd>Até 40 horas contínuas</dd>
+                        <dt>Conexão:</dt>
+                        <dd>Bluetooth 5.3 de baixa latência</dd>
+                    </dl>
+
+                    <h6>* Inclui garantia estendida de 3 anos e bolsa de transporte.</h6>
+                    <button class="btn-interativo">Adicionar ao Carrinho</button>
+                </article>
+
+                <!-- Artigo do Produto 2 -->
+                <article class="card">
+                    <h3>Smartwatch Lumina Fit X</h3>
+                    <h4>Monitorização de Saúde Avançada</h4>
+                    
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800" alt="Smartwatch Lumina Fit X" style="width:100%; border-radius: 8px;">
+                        <figcaption>Ecrã AMOLED HD de alta resolução com corpo em titânio.</figcaption>
+                    </figure>
+
+                    <h5>Recursos Principais:</h5>
+                    <ul>
+                        <li>Sensor de oxigénio no sangue e ECG</li>
+                        <li>Resistente à água até 50 metros</li>
+                    </ul>
+
+                    <dl>
+                        <dt>Compatibilidade:</dt>
+                        <dd>Android e iOS</dd>
+                    </dl>
+
+                    <h6>* Compatível com carregamento rápido sem fios.</h6>
+                    <button class="btn-interativo">Adicionar ao Carrinho</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- Secção de Destaques / Tabela de Preços -->
+        <section id="mais-vendidos" class="card">
+            <h2>Os Nossos Mais Vendidos</h2>
+            <ol>
+                <li>Auscultadores LuminaSound Pro - 149,99€</li>
+                <li>Smartwatch Lumina Fit X - 199,99€</li>
+                <li>Teclado Mecânico RGB Tech - 89,99€</li>
+            </ol>
+
+            <h3>Tabela Comparativa de Planos de Proteção</h3>
+            <table class="tabela-estilizada">
+                <thead>
+                    <tr>
+                        <th>Plano</th>
+                        <th>Duração</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Básico</td>
+                        <td>1 Ano</td>
+                        <td>19,99€</td>
+                    </tr>
+                    <tr>
+                        <td>Avançado</td>
+                        <td>2 Anos</td>
+                        <td>34,99€</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Todos os planos cobrem danos acidentais e avarias elétricas.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- Bloco Lateral de Opiniões / Rastreio -->
+        <aside id="avaliacoes" class="card">
+            <h3>O que dizem os nossos clientes</h3>
+            <blockquote>
+                "A qualidade do áudio do LuminaSound Pro superou todas as minhas expectativas. A entrega no Porto demorou menos de 24 horas!"
+            </blockquote>
+            <p><strong>- Rodrigo Mota, Porto</strong></p>
+
+            <p>Exemplo do estado do sistema de rastreamento:</p>
+            <pre>
+STATUS: PROCESSADO
+RASTREIO: TL-98234-PT
+OPERADORA: Express Cargo
+            </pre>
+        </aside>
+
+        <!-- Formato de Encomenda -->
+        <section id="encomenda" class="contacto-seccao">
+            <form id="form-encomenda" class="form-estilizado card">
+                <fieldset>
+                    <legend>Formulário de Pré-Encomenda</legend>
+
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite o seu nome">
+
+                    <label for="email">E-mail de Contacto:</label>
+                    <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.pt">
+
+                    <label for="produto">Selecione o Produto:</label>
+                    <select id="produto" name="produto">
+                        <option value="headphone">Auscultadores LuminaSound Pro</option>
+                        <option value="watch">Smartwatch Lumina Fit X</option>
+                        <option value="keyboard">Teclado Mecânico RGB</option>
+                    </select>
+
+                    <label for="observacoes">Observações ou Morada de Entrega:</label>
+                    <textarea id="observacoes" name="observacoes" rows="4" placeholder="Escreva a sua morada ou notas adicionais..."></textarea>
+
+                    <button type="submit" class="btn-interativo">Confirmar Pedido</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé com Elemento Address -->
+    <footer>
+        <address>
+            <strong>TechLumina Store Portugal</strong><br>
+            Avenida da Tecnologia, Nº 1000, 4000-000 Porto, Portugal<br>
+            Contacto: <a href="mailto:contacto@techlumina.pt" style="color: var(--cor1);">contacto@techlumina.pt</a> | Tel: +351 220 000 000
+        </address>
+        <p style="margin-top: 10px;">&copy; 2026 TechLumina Store - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

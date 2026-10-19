@@ -1,0 +1,41 @@
+README - Localização das Tags HTML
+
+
+
+---
+ Tag HTML / Ficheiro / Onde se encontra / Função no código 
+
+ `<address>` | `index.html` | Dentro do `<footer>`, contendo os dados fiscais, morada e email da empresa. 
+ `<article>` | `index.html` | Utilizado na secção de produtos (`.cards-grid`) para envolver cada item da loja. 
+ `<aside>` | `index.html` | Secção lateral contendo as opiniões dos clientes e o estado do rastreamento. 
+ `<blockquote>` | `index.html` | Dentro do `<aside>`, para destacar a citação com o testemunho de um cliente. 
+ `<canvas>` | `index.html` | Na secção de apresentação, renderizado dinamicamente via JavaScript (`script.js`). 
+ `<dd>` | `index.html` | Dentro de `<dl>`, define a descrição do valor de cada especificação técnica. 
+ `<div>` | `index.html` | Utilizado como contentor de grelha (`.cards-grid`) e banner (`#visit-counter`). 
+ `<dl>` | `index.html` | Lista de descrição utilizada nas especificações técnicas dos produtos. 
+ `<dt>` | `index.html` | Dentro de `<dl>`, define o termo/nome da especificação técnica (ex: Autonomia). 
+ `<fieldset>` | `index.html` | Dentro do `<form>`, agrupa semanticamente os campos do formulário de encomenda. 
+ `<figcaption>` | `index.html` | Legenda explicativa colocada abaixo da figura/vídeo/imagem dentro de `<figure>`. 
+ `<figure>` | `index.html` | Envolve os elementos multimédia (vídeo e imagem) com a respetiva legenda. 
+ `<footer>` | `index.html` | Rodapé da página com informações de contacto e direitos de autor. 
+ `<form>` | `index.html` | Formulário interativo para pré-encomenda de produtos (`#form-encomenda`). 
+ `<h1>` | `index.html` | Título principal do site no `<header>` ("TechLumina Store"). 
+ `<h2>` | `index.html` | Títulos secundários das secções principais (ex: "Produtos em Destaque"). 
+ `<h3>` | `index.html` | Nome dos produtos dentro dos cartões `<article>` e títulos dos blocos. 
+ `<h4>` | `index.html` | Subtítulo do produto com o seu grande destaque / slogan. 
+ `<h5>` | `index.html` | Subtítulo das listas de especificações técnicas. 
+ `<h6>` | `index.html` | Notas de rodapé e pequenos avisos legais de garantia do produto. 
+ `<header>` | `index.html` | Cabeçalho principal do site com logótipo, subtítulo e botão de tema. 
+ `<hr>` | `index.html` | Linha divisória horizontal entre a apresentação e os produtos. 
+ `<li>` | `index.html` | Itens das listas de navegação (`<nav>`), características e mais vendidos (`<ol>`). 
+ `<main>` | `index.html` | Contentor principal que envolve todo o conteúdo central da página. 
+ `<nav>` | `index.html` | Bloco do menu de navegação superior da loja. 
+ `<noscript>` | `index.html` | Mensagem de aviso para utilizadores que navegam com JavaScript desativado.
+ `<ol>` | `index.html` | Lista numerada/ordenada para a secção "Os Nossos Mais Vendidos". 
+ `<p>` | `index.html` | Parágrafos de texto descritivos distribuídos por toda a página. 
+ `<pre>` | `index.html` | Bloco com fonte monoespaçada para simulação de código do estado de rastreio. 
+ `<section>` | `index.html` | Divisões semânticas da página (Apresentação, Produtos, Tabela e Encomenda). 
+ `<table>` | `index.html` | Tabela com a comparação dos planos de proteção/garantia dos produtos. 
+ `<tfoot>` | `index.html` | Rodapé da tabela com observações gerais sobre a cobertura da garantia. 
+ `<ul>` | `index.html` | Lista não ordenada no menu `<nav>` e na lista de recursos do smartwatch. 
+ `<video>` | `index.html` | Leitor de vídeo HTML5 com controlos e imagem de poster no primeiro produto. 
