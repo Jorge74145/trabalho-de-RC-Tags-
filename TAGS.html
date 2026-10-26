@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Explicativo das Tags HTML do Ficheiro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1, h2 {
+            color: #1c3b9e;
+            border-bottom: 2px solid #49adff;
+            padding-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            background-color: #fff;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #2a598f;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        code {
+            background-color: #eef;
+            color: #d63384;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 1.05em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Guia Explicativo das Tags HTML do Ficheiro index.html</h1>
+
+    <h2>1. Estrutura Base e Metadados</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Descrição e Função</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>&lt;!DOCTYPE html&gt;</code></td>
+                <td>Declaração inicial que indica ao navegador que o documento utiliza o padrão HTML5.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;html&gt;</code></td>
+                <td>Elemento raiz que envolve todo o conteúdo do documento HTML. O atributo <code>lang="pt-pt"</code> especifica o idioma português de Portugal.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;head&gt;</code></td>
+                <td>Contentor para os metadados da página (informações técnicas não exibidas diretamente no corpo visual).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;meta&gt;</code></td>
+                <td>Define metadados como a codificação de carateres (<code>UTF-8</code>) e a configuração da área de visualização (<code>viewport</code>) para responsividade em dispositivos móveis.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;title&gt;</code></td>
+                <td>Define o título da página que aparece no separador do navegador e nos resultados de pesquisa.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;link&gt;</code></td>
+                <td>Estabelece a ligação entre o documento HTML e recursos externos, neste caso, o ficheiro de estilos CSS (<code>style.css</code>).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;body&gt;</code></td>
+                <td>Contém todo o conteúdo visível da página Web (textos, imagens, botões, formulários, etc.).</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>2. Estrutura de Layout e Semântica de Conteúdo</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Descrição e Função</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>&lt;header&gt;</code></td>
+                <td>Representa o cabeçalho inicial da página ou de uma secção, contendo títulos e o logótipo/apresentação.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;nav&gt;</code></td>
+                <td>Define um bloco de links de navegação principal do website.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;main&gt;</code></td>
+                <td>Identifica o conteúdo central e único da página, excluindo conteúdos repetidos como cabeçalhos e rodapés gerais.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;section&gt;</code></td>
+                <td>Agrupa um bloco de conteúdo temático autónomo dentro do documento.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;article&gt;</code></td>
+                <td>Representa uma composição independente e auto-contida (ex: cartão de produto individual).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;aside&gt;</code></td>
+                <td>Define conteúdo secundário ou de apoio relacionado com o tema principal (ex: opiniões de clientes, estado de rastreio).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;footer&gt;</code></td>
+                <td>Representa o rodapé do documento, contendo informações de direitos de autor e contactos.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;div&gt;</code></td>
+                <td>Contentor genérico em bloco usado para agrupar elementos com fins de estilização CSS ou manipulação via JS.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;hr&gt;</code></td>
+                <td>Cria uma separação temática ou linha horizontal divisória na página.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>3. Texto, Títulos e Formatação</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Descrição e Função</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>&lt;h1&gt;</code> até <code>&lt;h6&gt;</code></td>
+                <td>Títulos hierárquicos do documento, onde o <code>&lt;h1&gt;</code> é o título principal e o <code>&lt;h6&gt;</code> o subnível mais baixo.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;p&gt;</code></td>
+                <td>Representa um parágrafo de texto standard.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;a&gt;</code></td>
+                <td>Cria um hiperlink para navegar para outros ficheiros, âncoras internas (<code>#id</code>) ou links de e-mail (<code>mailto:</code>).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;blockquote&gt;</code></td>
+                <td>Destaca uma citação em bloco proveniente de outra fonte ou testemunho de cliente.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;strong&gt;</code></td>
+                <td>Aplica um destaque semântico de forte importância ao texto (apresentado visualmente a negrito).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;pre&gt;</code></td>
+                <td>Exibe texto pré-formatado mantendo todos os espaços e quebras de linha exatas no código.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;address&gt;</code></td>
+                <td>Fornece informações de contacto do autor, empresa ou proprietário do site.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;br&gt;</code></td>
+                <td>Insere uma quebra de linha simples no texto.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>4. Listas e Listas de Descrição</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Descrição e Função</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>&lt;ul&gt;</code></td>
+                <td>Cria uma lista não ordenada (normalmente apresentada com pontos/bullets).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;ol&gt;</code></td>
+                <td>Cria uma lista ordenada (apresentada de forma numerada sequencialmente).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;li&gt;</code></td>
+                <td>Define um item individual dentro de uma lista (<code>&lt;ul&gt;</code> ou <code>&lt;ol&gt;</code>).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;dl&gt;</code></td>
+                <td>Define uma lista de descrições/definições.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;dt&gt;</code></td>
+                <td>Representa o termo ou nome a ser especificado dentro de uma <code>&lt;dl&gt;</code>.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;dd&gt;</code></td>
+                <td>Representa o valor ou a descrição associada ao termo <code>&lt;dt&gt;</code>.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>5. Multimédia e Elementos Gráficos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Descrição e Função</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>&lt;figure&gt;</code></td>
+                <td>Agrupa um conteúdo multimédia (imagem, vídeo) e a sua respetiva legenda.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;figcaption&gt;</code></td>
+                <td>Define a legenda explicativa do conteúdo presente na tag <code>&lt;figure&gt;</code>.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;img&gt;</code></td>
+                <td>Insere uma imagem na página web através do atributo <code>src</code>.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;video&gt;</code></td>
+                <td>Incorpora um leitor de vídeo com controlos de reprodução integrados.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;source&gt;</code></td>
+                <td>Especifica o ficheiro de media e o tipo (ex: <code>video/mp4</code>) para elementos como <code>&lt;video&gt;</code>.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;canvas&gt;</code></td>
+                <td>Define uma área gráfica onde é possível desenhar formas, gráficos e gradientes utilizando scripts em JavaScript.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>6. Tabelas de Dados</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Descrição e Função</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>&lt;table&gt;</code></td>
+                <td>Cria uma estrutura de tabela para exibição de dados bidimensionais.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;thead&gt;</code></td>
+                <td>Agrupa os cabeçalhos das colunas de uma tabela.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;tbody&gt;</code></td>
+                <td>Agrupa os dados principais (as linhas) da tabela.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;tfoot&gt;</code></td>
+                <td>Agrupa as linhas de resumo ou notas de rodapé de uma tabela.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;tr&gt;</code></td>
+                <td>Define uma linha dentro da tabela (<em>Table Row</em>).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;th&gt;</code></td>
+                <td>Define uma célula de cabeçalho com texto em destaque (<em>Table Header</em>).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;td&gt;</code></td>
+                <td>Define uma célula normal de dados numa tabela (<em>Table Data</em>).</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>7. Formulários e Interatividade</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Descrição e Função</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>&lt;form&gt;</code></td>
+                <td>Cria um formulário interativo para recolher dados preenchidos pelo utilizador.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;fieldset&gt;</code></td>
+                <td>Agrupa visualmente e semanticação campos relacionados dentro de um formulário.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;legend&gt;</code></td>
+                <td>Especifica o título ou legenda explicativa do bloco <code>&lt;fieldset&gt;</code>.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;label&gt;</code></td>
+                <td>Define um rótulo de texto associado a um elemento de entrada (através do atributo <code>for</code>).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;input&gt;</code></td>
+                <td>Campo de entrada onde o utilizador insere dados (ex: tipos <code>text</code> e <code>email</code>).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;select&gt;</code></td>
+                <td>Cria um menu suspenso de seleção de opções (dropdown).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;option&gt;</code></td>
+                <td>Define cada opção individual selecionável dentro do menu <code>&lt;select&gt;</code>.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;textarea&gt;</code></td>
+                <td>Campo de texto multilinha para inserção de mensagens mais extensas ou observações.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;button&gt;</code></td>
+                <td>Cria um botão clicável para submeter formulários ou acionar interações via JavaScript.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>8. Scripts e Resposta a Suporte</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Descrição e Função</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>&lt;script&gt;</code></td>
+                <td>Liga ou insere código executável JavaScript (neste caso, carrega o ficheiro <code>script.js</code>).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;noscript&gt;</code></td>
+                <td>Apresenta um conteúdo alternativo caso o navegador não suporte ou tenha o JavaScript desativado.</td>
+            </tr>
+        </tbody>
+    </table>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
